@@ -368,7 +368,7 @@ class App extends Component {
       isLoading: true,
       successMessage: '',
       errorMessage: '',
-      isLanguageMenuOpen: false, // Добавлено для переключателя языков
+      isLanguageMenuOpen: false,
     };
     this.toggleNav = this.toggleNav.bind(this);
     this.toggleTheme = this.toggleTheme.bind(this);
@@ -377,9 +377,9 @@ class App extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.scrollToTop = this.scrollToTop.bind(this);
-    this.toggleLanguageMenu = this.toggleLanguageMenu.bind(this); // Добавлено
-    this.getCountryCode = this.getCountryCode.bind(this); // Добавлено
-    this.handleClickOutside = this.handleClickOutside.bind(this); // Добавлено
+    this.toggleLanguageMenu = this.toggleLanguageMenu.bind(this);
+    this.getCountryCode = this.getCountryCode.bind(this);
+    this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
   componentDidMount() {
@@ -500,7 +500,7 @@ class App extends Component {
   }
 
   render() {
-    const djBeckermanImage = `${process.env.PUBLIC_URL}/dj-beckerman.jpg`;
+    const backgroundImage = `${process.env.PUBLIC_URL}/backround.jpg`;
     const { t } = this.props;
 
     return (
@@ -629,7 +629,7 @@ class App extends Component {
           className="App-header"
           id="home"
           style={{
-            backgroundImage: `url(${djBeckermanImage})`,
+            backgroundImage: `url(${backgroundImage})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
