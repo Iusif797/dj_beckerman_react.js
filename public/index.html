@@ -1,43 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <!-- Описание сайта для поисковых систем и мессенджеров -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="DJ-Beckerman — профессиональный диджей с более чем 10-летним опытом выступлений в Тбилиси и Баку. Организую для вас отличную музыку и подарю незабываемые впечатления."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Мета-тег для подтверждения владения сайтом в Google Search Console -->
+    <meta name="google-site-verification" content="UJWwC5Y2kvVDhpYh-cqaCXHxEukBQ_hzKt84aSVVems" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Манифест для PWA -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Заголовок сайта -->
+    <title>DJ-Beckerman | Профессиональный диджей в Тбилиси и Баку</title>
+
+    <!-- Open Graph мета-теги для социальных сетей -->
+    <meta property="og:title" content="DJ-Beckerman | Профессиональный диджей" />
+    <meta
+      property="og:description"
+      content="Опытный диджей в Тбилиси и Баку. Создаю незабываемую атмосферу на ваших мероприятиях!"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/dj-beckerman.jpg" />
+    <meta property="og:url" content="https://dj-beckerman.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- Twitter Card мета-теги -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DJ-Beckerman | Профессиональный диджей" />
+    <meta
+      name="twitter:description"
+      content="Опытный диджей в Тбилиси и Баку. Создаю незабываемую атмосферу на ваших мероприятиях!"
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/dj-beckerman.jpg" />
+
+    <!-- Структурированные данные Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "DJ-Beckerman",
+        "jobTitle": "Диджей",
+        "url": "https://dj-beckerman.vercel.app/",
+        "sameAs": [
+          "https://www.instagram.com/dj_beckerman/",
+          "https://t.me/beckerman979"
+        ],
+        "image": "%PUBLIC_URL%/dj-beckerman.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Тбилиси и Баку"
+        },
+        "description": "Профессиональный диджей с более чем 10-летним опытом работы на различных мероприятиях в Тбилиси и Баку."
+      }
+    </script>
+
+    <!-- Мета-тег для индексации поисковыми системами -->
+    <meta name="robots" content="index, follow" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Вам необходимо включить JavaScript, чтобы запустить это приложение.</noscript>
     <div id="root"></div>
+
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      Этот HTML-файл является шаблоном.
+      Если открыть его напрямую в браузере, вы увидите пустую страницу.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      Вы можете добавить веб-шрифты, мета-теги или аналитику в этот файл.
+      Шаг сборки добавит объединённые скрипты в тег <body>.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      Для начала разработки запустите `npm start` или `yarn start`.
+      Для создания производственной сборки используйте `npm run build` или `yarn build`.
     -->
   </body>
 </html>
